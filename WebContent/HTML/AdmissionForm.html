@@ -1,0 +1,77 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/Global.css" />
+		<script type="text/javascript" src="../js/myscript.js"></script>
+		<title>AdmissionForm - Online Campus Portal</title>
+	</head>
+	<body bgcolor="FFCC99">
+		<h1><marquee>Welcome to Online Admission Portal</marquee></h1><br/><br/>
+		<form name="AdmissionForm" action="success.html" onSubmit="validateForm()"
+		method="post">
+			<table border="2" align="center" class="table">
+				<tr>
+				<td>Name:</td>
+				<td>
+					<input type="text" name="firstName" id="firstName" size="50">
+				</td>
+				</tr>
+				<tr>
+<td>Address:</td>
+<td>
+<textarea cols="50" rows="5"></textarea>
+</td>
+</tr>
+<tr>
+<td>Educational Qualification:</td>
+<td>
+<select name="eduQual">
+<option value="1">Graduate</option>
+<option value="2">Post Graduate</option>
+<option value="3">Diploma</option>
+<option value="4">Others</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<input type="radio" name="gender" value="M"
+checked="checked">Male
+<input type="radio" name="gender" value="F">Female
+</td>
+</tr>
+<tr>
+<td>Specialization:</td>
+<td>
+<input type="checkbox" name="subject1" value="science">Science
+<input type="checkbox" name="subject2" value="maths">Maths
+<input type="checkbox" name="subject3" value="accounts">Accounts
+<input type="checkbox" name="subject4" value="biology">Biology
+</td>
+</tr>
+<tr>
+<td>City Preferences:</td>
+<td>
+<select name="cityPref" multiple="multiple" size="4"
+style="width:100%;">
+<option value="1">Ahmedabad</option>
+<option value="2">Mumbai</option>
+<option value="3">Pune</option>
+<option value="4">Chennai</option>
+<option value="5">Calcutta</option>
+<option value="6">Delhi</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+<input type="submit" value="Submit" />
+<input type="reset" value="Reset" />
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
